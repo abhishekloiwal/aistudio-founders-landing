@@ -13,13 +13,13 @@ export default function LandingPage() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="mb-8">
+      <div className="mb-1">
         <RotatingPolygon />
       </div>
 
       <TextGenerateEffect 
         words={heroText} 
-        className="mb-8 text-center max-w-3xl" 
+        className="mb-1 text-center max-w-3xl" 
         duration={0.8}
         onAnimationComplete={() => setShowButton(true)}
       />

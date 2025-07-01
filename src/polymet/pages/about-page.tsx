@@ -29,7 +29,7 @@ export default function AboutPage() {
     <div className="flex flex-col items-center justify-center min-h-screen px-8 py-16">
       <div className="max-w-7xl w-full space-y-20">
         <FadeInBlur duration={1} delay={0.2}>
-          <p className="text-gray-300 font-light tracking-normal text-lg text-center">
+          <p className="text-gray-300 font-light tracking-normal text-sm text-center">
             Transforming MENA's $96B technology vision into reality
             <br />
             through systematic venture building

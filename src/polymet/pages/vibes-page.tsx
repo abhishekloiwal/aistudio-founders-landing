@@ -5,7 +5,7 @@ export default function VibesPage() {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <FadeInBlur duration={1} delay={0.2}>
-        <p className="text-gray-300 font-light tracking-normal text-lg text-center">
+        <p className="text-gray-300 font-light tracking-normal text-sm text-center">
           We believe the real MOAT today is
           <br />
           <Cover>velocity</Cover>
