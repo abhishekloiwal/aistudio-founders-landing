@@ -20,7 +20,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
           5% Equity
         </div>
       </header>
-      <main className="flex-1 flex items-center justify-center">
+      <main className="flex-1 flex justify-center items-start pt-32 md:items-center md:pt-0">
         {children}
       </main>
       
