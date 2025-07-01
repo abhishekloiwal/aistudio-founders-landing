@@ -26,7 +26,7 @@ export default function TeamPage() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 pt-0 md:pt-0">
       <AnimatedTestimonials testimonials={teamMembers} autoplay={true} />
     </div>
   );

@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { FadeInBlur } from "@/components/ui/fade-in-blur";
 
 export default function ApplyPage() {
-  const navigate = useNavigate();
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     building: "",
@@ -36,20 +34,12 @@ export default function ApplyPage() {
             If we're a fit, you'll hear within 72 hours.
           </p>
         </FadeInBlur>
-        <FadeInBlur duration={0.8} delay={0.3}>
-          <button
-            onClick={() => navigate("/")}
-            className="mt-8 text-gray-500 hover:text-gray-300 text-sm font-light tracking-wider transition-colors duration-300"
-          >
-            Go back home
-          </button>
-        </FadeInBlur>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-16">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8 md:py-16">
       <FadeInBlur duration={0.8}>
         <form onSubmit={handleSubmit} className="w-full max-w-md space-y-6">
           {/* What are you building? */}
@@ -133,14 +123,6 @@ export default function ApplyPage() {
             Submit
           </button>
         </form>
-
-        {/* Back to home link */}
-        <button
-          onClick={() => navigate("/")}
-          className="mt-8 text-gray-500 hover:text-gray-300 text-sm font-light tracking-wider transition-colors duration-300"
-        >
-          Go back home
-        </button>
       </FadeInBlur>
     </div>
   );
