@@ -13,18 +13,18 @@ export default function LandingPage() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="mb-3 md:mb-6">
+      <div className="mb-8">
         <RotatingPolygon />
       </div>
 
       <TextGenerateEffect 
         words={heroText} 
-        className="mb-3 md:mb-6 text-center max-w-3xl" 
+        className="mb-8 text-center max-w-3xl" 
         duration={0.8}
         onAnimationComplete={() => setShowButton(true)}
       />
 
-      <FadeInBlur show={showButton} delay={0.2} duration={0.8}>
+      <FadeInBlur show={showButton} delay={0.2} duration={0.8} className="mt-4">
         <CTAButton label="Apply" onClick={() => navigate("/apply")} />
       </FadeInBlur>
     </div>

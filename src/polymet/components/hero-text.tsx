@@ -9,7 +9,7 @@ export default function HeroText({ lines, className = "" }: HeroTextProps) {
       {lines.map((line, index) => (
         <p
           key={index}
-          className="text-gray-300 font-light tracking-normal leading-relaxed my-2"
+          className="text-gray-200 font-light tracking-normal leading-relaxed my-2"
         >
           {line}
         </p>
