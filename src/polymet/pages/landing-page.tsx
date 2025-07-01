@@ -19,7 +19,7 @@ export default function LandingPage() {
 
       <TextGenerateEffect 
         words={heroText} 
-        className="mb-3 md:mb-12 text-center max-w-3xl" 
+        className="mb-3 md:mb-6 text-center max-w-3xl" 
         duration={0.8}
         onAnimationComplete={() => setShowButton(true)}
       />
