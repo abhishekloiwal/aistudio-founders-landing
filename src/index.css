@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent white background on overscroll */
+html {
+  background-color: #000000;
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Ensure root element also has black background */
+#root {
+  background-color: #000000;
+  min-height: 100vh;
+}
+
 @layer base {
     :root {
       --background: 0 0% 100%;

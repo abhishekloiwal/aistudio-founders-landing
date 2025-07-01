@@ -91,6 +91,9 @@
 - [x] Update map to center on Dubai with connections to SF, NY, London, Mumbai, and Bangalore
 - [x] Make city dots smaller and show labels only on hover
 - [x] Install Three.js and implement 3D rotating icosahedron on landing page
+- [x] Create GitHub repository aistudio-founders-landing
+- [x] Set up Netlify continuous deployment from GitHub
+- [x] Replace favicon with black AI Studio logo
 
 ---
 
