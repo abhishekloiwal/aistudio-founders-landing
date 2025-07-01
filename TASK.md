@@ -171,6 +171,13 @@ Last updated: 2025-01-28
   - Made world map responsive (85% scale on mobile, 130% tablet, 175% desktop)
   - Added responsive padding to About page to prevent map cutoff
 
+- [x] **Reduced team page card sizes** (2025-01-28)
+  - Made cards smaller overall, especially on mobile
+  - Reduced image height: 224px mobile, 256px tablet, 288px desktop
+  - Reduced text sizes with responsive scaling
+  - Decreased padding and gaps between elements
+  - Made arrow buttons smaller on mobile
+
 ## 🔨 Tasks in Progress
 
 (No tasks currently in progress)

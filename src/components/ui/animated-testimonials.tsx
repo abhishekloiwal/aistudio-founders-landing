@@ -43,10 +43,10 @@ export const AnimatedTestimonials = ({
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
-    <div className="mx-auto max-w-xs px-4 py-12 font-sans antialiased md:max-w-2xl md:px-8 lg:px-12 md:py-16">
-      <div className="relative grid grid-cols-1 gap-12 md:gap-16 md:grid-cols-2">
+    <div className="mx-auto max-w-xs px-4 py-8 font-sans antialiased md:max-w-xl lg:max-w-2xl md:px-6 lg:px-8 md:py-12">
+      <div className="relative grid grid-cols-1 gap-8 md:gap-10 md:grid-cols-2 md:items-center">
         <div>
-          <div className="relative h-56 w-full md:h-64 lg:h-72">
+          <div className="relative h-48 w-full md:h-56 lg:h-64">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -92,7 +92,7 @@ export const AnimatedTestimonials = ({
             </AnimatePresence>
           </div>
         </div>
-        <div className="flex flex-col justify-between py-2 md:py-4">
+        <div className="flex flex-col justify-center">
           <motion.div
             key={active}
             initial={{
@@ -112,13 +112,13 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-xl md:text-2xl font-bold text-white">
+            <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mt-2">
               {testimonials[active].name}
             </h3>
-            <p className="text-xs md:text-sm text-gray-400">
+            <p className="text-xs text-gray-400">
               {testimonials[active].designation}
             </p>
-            <motion.p className="mt-4 md:mt-6 text-sm md:text-base text-gray-300 leading-relaxed">
+            <motion.p className="mt-3 md:mt-4 text-xs md:text-sm lg:text-base text-gray-300 leading-relaxed">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -144,18 +144,18 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-8 md:pt-12">
+          <div className="flex gap-3 pt-6 md:pt-8">
             <button
               onClick={handlePrev}
-              className="group/button flex h-6 w-6 md:h-7 md:w-7 items-center justify-center rounded-full bg-gray-800 transition-colors duration-300 hover:bg-gray-700"
+              className="group/button flex h-6 w-6 items-center justify-center rounded-full bg-gray-800 transition-colors duration-300 hover:bg-gray-700"
             >
-              <IconArrowLeft className="h-4 w-4 md:h-5 md:w-5 text-gray-400 transition-colors duration-300 group-hover/button:text-gray-300" />
+              <IconArrowLeft className="h-4 w-4 text-gray-400 transition-colors duration-300 group-hover/button:text-gray-300" />
             </button>
             <button
               onClick={handleNext}
-              className="group/button flex h-6 w-6 md:h-7 md:w-7 items-center justify-center rounded-full bg-gray-800 transition-colors duration-300 hover:bg-gray-700"
+              className="group/button flex h-6 w-6 items-center justify-center rounded-full bg-gray-800 transition-colors duration-300 hover:bg-gray-700"
             >
-              <IconArrowRight className="h-4 w-4 md:h-5 md:w-5 text-gray-400 transition-colors duration-300 group-hover/button:text-gray-300" />
+              <IconArrowRight className="h-4 w-4 text-gray-400 transition-colors duration-300 group-hover/button:text-gray-300" />
             </button>
           </div>
         </div>

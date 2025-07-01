@@ -4,14 +4,14 @@ export default function TeamPage() {
   const teamMembers = [
     {
       quote:
-        "Drawing from quantitative trading experience at Tower Research, Optiver, and Goldman Sachs, Sharad drives AiStudio's vision to build enterprise-grade AI ventures across industries. He leads strategic operations and venture development, architecting the framework that transforms innovative AI concepts into scalable startups",
+        "Quantitative trading veteran from Tower Research, Optiver, and Goldman Sachs. Sharad architects AiStudio's framework for transforming AI ventures into scalable, enterprise-grade products",
       name: "Sharad",
       designation: "CEO",
       src: "https://aistudio.ae/sharad.jpeg",
     },
     {
       quote:
-        "Former high frequency trader with 6 years experience, built a trading desk from the ground up at Maven Securities London and formerly at Optiver Amsterdam. Abhishek combines technical expertise with a builder mindset to develop end-to-end production-ready AI solutions",
+        "Former HFT trader who built a trading desk from the ground up at Maven Securities London.  Previously at Optiver Amsterdam, Abhishek brings deep technical expertise to develop production-ready AI solutions",
       name: "Abhishek",
       designation: "CPO",
       src: "https://aistudio.ae/abhishek.jpg",
