@@ -181,9 +181,19 @@ Last updated: 2025-01-28
   - Final sizes: 192px mobile, 224px tablet, 256px desktop
   - Improved text alignment with margin adjustments
 
+- [x] **Added third team member to team page** (2025-01-28)
+  - Added Monish Pathare as VC with investment analytics background
+  - Maintained consistent description length (~29 words)
+  - Former VC at Lightbox Ventures with $400M fund analytics system
+
 ## 🔨 Tasks in Progress
 
-(No tasks currently in progress)
+- [ ] **Created Apply page with form** (2025-01-28)
+  - Simple form with 5 fields (3 required, 2 optional)
+  - No backend - just frontend state management
+  - Auto-response: "If we're a fit, you'll hear within 72 hours"
+  - Apply button on landing page navigates to /apply
+  - Subtle "Go back home" button on apply page
 
 ## 📋 TODO
 

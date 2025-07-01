@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { FadeInBlur } from "@/components/ui/fade-in-blur";
 import CTAButton from "@/polymet/components/cta-button";
 import RotatingPolygon from "@/polymet/components/rotating-polygon";
 
 export default function LandingPage() {
+  const navigate = useNavigate();
   const [showButton, setShowButton] = useState(false);
   
   const heroText = "Where Systematic Thinkers Build AI-First Companies";
@@ -23,8 +25,9 @@ export default function LandingPage() {
       />
 
       <FadeInBlur show={showButton} delay={0.2} duration={0.8} className="mt-4">
-        <CTAButton label="Apply" />
+        <CTAButton label="Apply" onClick={() => navigate("/apply")} />
       </FadeInBlur>
     </div>
   );
 }
+

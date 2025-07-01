@@ -4,6 +4,7 @@ import LandingPage from "@/polymet/pages/landing-page";
 import AboutPage from "@/polymet/pages/about-page";
 import TeamPage from "@/polymet/pages/team-page";
 import VibesPage from "@/polymet/pages/vibes-page";
+import ApplyPage from "@/polymet/pages/apply-page";
 
 export default function AIStudioPrototype() {
   return (
@@ -38,6 +39,14 @@ export default function AIStudioPrototype() {
           element={
             <LandingLayout>
               <TeamPage />
+            </LandingLayout>
+          }
+        />
+        <Route
+          path="/apply"
+          element={
+            <LandingLayout>
+              <ApplyPage />
             </LandingLayout>
           }
         />
