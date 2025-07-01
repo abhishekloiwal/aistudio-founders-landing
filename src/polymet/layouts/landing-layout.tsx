@@ -14,10 +14,12 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
           <SVGLogo />
         </div>
 
-        <div className="text-xs text-gray-400 font-light tracking-wider">
-          $1M Uncapped
+        <div className="text-xs text-gray-400 font-light tracking-wider text-right">
+          500k+ partner credits
           <br />
-          5% Equity
+          World Class Advisors
+          <br />
+          GTM + Engineering
         </div>
       </header>
       <main className="flex-1 flex justify-center items-center">
