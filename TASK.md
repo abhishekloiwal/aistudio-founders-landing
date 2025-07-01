@@ -104,4 +104,81 @@
 - Added framer-motion animations for better UX
 - Implemented advanced hover effects with particles
 - Navigation updated to minimal text-based design with subtle interactions
-- Team page showcases partner profiles with animated carousel 
+- Team page showcases partner profiles with animated carousel
+
+# Task List
+
+Last updated: 2025-01-28
+
+## ✅ Completed Tasks
+
+- [x] **Enhanced text animation on landing page** (2025-01-28)
+  - Added fade-in blur animation to hero text
+  - Hero text appears word by word
+
+- [x] **Sequenced animations** (2025-01-28)
+  - Made Apply button appear only after text animation completes
+
+- [x] **Fixed About page navigation** (2025-01-28)
+  - Added proper routes for About, Vibes, and Team pages
+
+- [x] **Enhanced About page with sparkles effect** (2025-01-28)
+  - Added Cover component to "velocity" word
+  - Kept font size as text-l
+
+- [x] **Created Team page with founders' bios** (2025-01-28)
+  - Added AnimatedTestimonials component
+  - Made founders' images black and white
+  - Fixed arrow animations (removed rotation, added subtle highlight)
+  - Fixed autoplay timer to reset on manual navigation
+  - Increased autoplay interval to 7.5 seconds
+
+- [x] **Replaced navigation with minimal text-based navbar** (2025-01-28)
+  - Removed FloatingDock component
+  - Created simple text navigation at bottom center
+
+- [x] **Created Vibes page with velocity content** (2025-01-28)
+  - Moved velocity content from About page to Vibes page
+
+- [x] **Updated About page with MENA vision and world map** (2025-01-28)
+  - New content: "Transforming MENA's $96B technology vision into reality"
+  - Added interactive world map showing connections from Dubai
+  - Fixed map alignment using Equirectangular projection with Y offset
+  - Made map 175% scale with hover labels and 0.6s animation
+  - Increased hover area to 12px radius
+
+- [x] **Added 3D rotating polygon to landing page** (2025-01-28)
+  - Installed Three.js and TypeScript types
+  - Created rotating icosahedron component
+  - Replaced gradient circle with 3D polygon
+  - Increased size to 160x160px
+  - Reduced spacing between polygon and text
+
+- [x] **Changed logo color to gray** (2025-01-28)
+  - Changed AI Studio SVG logo from white to gray-300
+
+- [x] **Set up GitHub repository and Netlify deployment** (2025-01-28)
+  - Created GitHub repo: https://github.com/abhishekloiwal/aistudio-founders-landing
+  - Configured Netlify with automatic CI/CD
+  - Site deployed at: https://aistudio-founders-landing.netlify.app
+
+- [x] **Updated favicon and page title** (2025-01-28)
+  - Changed favicon to black AI Studio logo
+  - Updated page title to "AI Studio - Where Systematic Thinkers Build AI-First Companies"
+
+- [x] **Mobile optimizations** (2025-01-28)
+  - Fixed white overscroll on iOS by setting black background on html/body
+  - Made world map responsive (85% scale on mobile, 130% tablet, 175% desktop)
+  - Added responsive padding to About page to prevent map cutoff
+
+## 🔨 Tasks in Progress
+
+(No tasks currently in progress)
+
+## 📋 TODO
+
+(No pending tasks)
+
+## 💡 Discovered During Work
+
+(No new discoveries) 
