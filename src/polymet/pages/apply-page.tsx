@@ -28,7 +28,7 @@ export default function ApplyPage() {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center px-4 py-8">
+      <div className="flex flex-col items-center justify-center">
         <FadeInBlur duration={0.8}>
           <p className="text-gray-300 text-lg font-light tracking-wide text-center">
             If we're a fit, you'll hear within 72 hours.
@@ -39,9 +39,9 @@ export default function ApplyPage() {
   }
 
   return (
-    <div className="flex flex-col items-center px-4 py-4 md:py-16 overflow-y-auto">
+    <div className="w-full max-w-md mx-auto">
       <FadeInBlur duration={0.8}>
-        <form onSubmit={handleSubmit} className="w-full max-w-md space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6">
           {/* What are you building? */}
           <div>
             <label className="block text-gray-300 text-sm font-light mb-2">
