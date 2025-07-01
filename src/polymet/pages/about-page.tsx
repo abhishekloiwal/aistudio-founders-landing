@@ -26,10 +26,10 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center w-full">
-      <div className="max-w-7xl w-full space-y-6 md:space-y-12">
+    <div className="flex flex-col items-center justify-center w-full px-4 sm:px-6 md:px-8 py-4 md:py-16">
+      <div className="max-w-7xl w-full space-y-6 md:space-y-20">
         <FadeInBlur duration={1} delay={0.2}>
-          <p className="text-gray-300 font-light tracking-normal text-base sm:text-lg text-center px-4">
+          <p className="text-gray-300 font-light tracking-normal text-base sm:text-lg text-center px-0 md:px-4">
             Transforming MENA's $96B technology vision into reality
             <br />
             through systematic venture building
@@ -37,7 +37,7 @@ export default function AboutPage() {
         </FadeInBlur>
         
         <FadeInBlur duration={1.2} delay={0.5}>
-          <div className="w-full overflow-hidden px-4">
+          <div className="w-full overflow-visible">
             <WorldMap dots={mapConnections} lineColor="#9ca3af" />
           </div>
         </FadeInBlur>
