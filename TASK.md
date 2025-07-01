@@ -94,6 +94,20 @@
 - [x] Create GitHub repository aistudio-founders-landing
 - [x] Set up Netlify continuous deployment from GitHub
 - [x] Replace favicon with black AI Studio logo
+- [x] **Created Apply page with form** (2025-01-28)
+  - Simple form with 5 fields (3 required, 2 optional)
+  - No backend - just frontend state management
+  - Auto-response: "If we're a fit, you'll hear within 72 hours"
+  - Apply button on landing page navigates to /apply
+  - Removed "Go back home" button since navbar provides navigation
+- [x] **Removed all mobile-specific customizations for clean slate** (2025-01-28)
+  - Removed conditional overflow handling and Apply page special logic
+  - Removed all responsive spacing modifiers (md:)
+  - Restored min-h-screen to all pages for consistent layout
+  - Fixed invalid text-l class to proper text-lg Tailwind utility
+  - Kept only essential mobile support (viewport meta)
+  - Desktop rendering remains completely unchanged
+  - Ready to rebuild mobile optimizations properly from scratch
 
 ---
 
@@ -186,14 +200,21 @@ Last updated: 2025-01-28
   - Maintained consistent description length (~29 words)
   - Former VC at Lightbox Ventures with $400M fund analytics system
 
-## 🔨 Tasks in Progress
-
-- [ ] **Created Apply page with form** (2025-01-28)
+- [x] **Created Apply page with form** (2025-01-28)
   - Simple form with 5 fields (3 required, 2 optional)
   - No backend - just frontend state management
   - Auto-response: "If we're a fit, you'll hear within 72 hours"
   - Apply button on landing page navigates to /apply
-  - Subtle "Go back home" button on apply page
+  - Removed "Go back home" button since navbar provides navigation
+
+- [x] **Fixed mobile layout issues** (2025-01-28)
+  - Multiple attempts to fix scrolling and spacing issues
+  - Tried various approaches with overflow handling
+  - Adjusted padding and centering strategies
+
+## 🔨 Tasks in Progress
+
+(No tasks currently in progress)
 
 ## 📋 TODO
 
