@@ -26,8 +26,8 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 md:px-8 py-8 md:py-16">
-      <div className="max-w-7xl w-full space-y-12 md:space-y-20">
+    <div className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-4 md:py-16">
+      <div className="max-w-7xl w-full space-y-8 md:space-y-20">
         <FadeInBlur duration={1} delay={0.2}>
           <p className="text-gray-300 font-light tracking-normal text-base sm:text-lg text-center px-4">
             Transforming MENA's $96B technology vision into reality

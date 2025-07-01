@@ -8,7 +8,7 @@ interface LandingLayoutProps {
 
 export default function LandingLayout({ children }: LandingLayoutProps) {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
+    <div className="h-screen bg-black text-white flex flex-col">
       <header className="p-6 absolute top-0 right-0 left-0 flex justify-between items-center">
         <div className="w-8 h-8 text-gray-300">
           <SVGLogo />
@@ -20,7 +20,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
           5% Equity
         </div>
       </header>
-      <main className="flex-1 flex justify-center items-center pt-24 md:pt-0">
+      <main className="flex-1 flex justify-center items-start pt-16 pb-16 md:items-center md:pt-0 md:pb-0 overflow-y-auto">
         {children}
       </main>
       
