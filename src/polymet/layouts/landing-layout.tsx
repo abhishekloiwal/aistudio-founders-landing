@@ -14,7 +14,7 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
           <SVGLogo />
         </div>
 
-        <div className="text-xs text-gray-400 font-light tracking-wider text-right">
+        <div className="text-xs text-gray-400 font-light tracking-normal text-right">
           500k+ partner credits
           <br />
           World Class Advisors
