@@ -27,7 +27,7 @@ export default function AIStudioPrototype() {
           }
         />
         <Route
-          path="/vibes"
+          path="/approach"
           element={
             <LandingLayout>
               <VibesPage />

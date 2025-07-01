@@ -8,6 +8,7 @@ export default function TeamPage() {
       name: "Sharad",
       designation: "CEO",
       src: "https://aistudio.ae/sharad.jpeg",
+      linkedin: "https://www.linkedin.com/in/sharad157/",
     },
     {
       quote:
@@ -15,6 +16,7 @@ export default function TeamPage() {
       name: "Abhishek",
       designation: "CPO",
       src: "https://aistudio.ae/abhishek.jpg",
+      linkedin: "https://www.linkedin.com/in/abhishekloiwal/",
     },
     {
       quote:
@@ -22,6 +24,7 @@ export default function TeamPage() {
       name: "Monish",
       designation: "VC",
       src: "https://lightbox.vc/uploads/team/20240422061001_monish_pathare,_lightbox_2024.jpg",
+      linkedin: "https://www.linkedin.com/in/monish-pathare",
     },
   ];
 

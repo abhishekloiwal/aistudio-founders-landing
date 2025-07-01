@@ -10,6 +10,7 @@ type Testimonial = {
   name: string;
   designation: string;
   src: string;
+  linkedin?: string;
 };
 export const AnimatedTestimonials = ({
   testimonials,
@@ -43,10 +44,10 @@ export const AnimatedTestimonials = ({
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
-    <div className="mx-auto max-w-xs px-4 py-8 font-sans antialiased md:max-w-xl lg:max-w-2xl md:px-6 lg:px-8 md:py-12">
+    <div className="mx-auto max-w-xs px-4 py-8 font-sans antialiased md:max-w-xl lg:max-w-xl md:px-6 lg:px-8 md:py-12">
       <div className="relative grid grid-cols-1 gap-8 md:gap-10 md:grid-cols-2 md:items-center">
         <div>
-          <div className="relative h-48 w-full md:h-56 lg:h-64">
+          <div className="relative h-48 md:h-56 lg:h-64">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -74,19 +75,37 @@ export const AnimatedTestimonials = ({
                     rotate: randomRotateY(),
                   }}
                   transition={{
-                    duration: 0.4,
+                    duration: 0.5,
                     ease: "easeInOut",
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
-                  <img
-                    src={testimonial.src}
-                    alt={testimonial.name}
-                    width={500}
-                    height={500}
-                    draggable={false}
-                    className="h-full w-full rounded-2xl object-cover object-center grayscale"
-                  />
+                  {testimonial.linkedin ? (
+                    <a 
+                      href={testimonial.linkedin} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block h-full w-full cursor-pointer"
+                    >
+                      <img
+                        src={testimonial.src}
+                        alt={testimonial.name}
+                        width={500}
+                        height={500}
+                        draggable={false}
+                        className="h-full w-full rounded-2xl object-cover object-center grayscale"
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={testimonial.src}
+                      alt={testimonial.name}
+                      width={500}
+                      height={500}
+                      draggable={false}
+                      className="h-full w-full rounded-2xl object-cover object-center grayscale"
+                    />
+                  )}
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -118,7 +137,7 @@ export const AnimatedTestimonials = ({
             <p className="text-xs text-gray-400">
               {testimonials[active].designation}
             </p>
-            <motion.p className="mt-3 md:mt-4 text-xs md:text-sm lg:text-base text-gray-300 leading-relaxed">
+            <motion.p className="mt-3 md:mt-4 text-xs md:text-sm lg:text-sm text-gray-300 leading-relaxed">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -133,7 +152,7 @@ export const AnimatedTestimonials = ({
                     y: 0,
                   }}
                   transition={{
-                    duration: 0.2,
+                    duration: 1.2,
                     ease: "easeInOut",
                     delay: 0.02 * index,
                   }}
