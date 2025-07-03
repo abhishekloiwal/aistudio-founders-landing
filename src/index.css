@@ -86,4 +86,29 @@ body {
     }
 }
 
+/* Scrollbar hiding utility */
+@layer utilities {
+  .scrollbar-hide {
+    /* Firefox */
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    /* Chrome, Safari, Edge */
+    display: none;
+  }
+}
+
+/* Animation for partner card */
+@keyframes move {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.animate-move {
+  animation: move 5s linear infinite;
+}
   

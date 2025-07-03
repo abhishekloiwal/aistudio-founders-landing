@@ -6,6 +6,7 @@ import TeamPage from "@/polymet/pages/team-page";
 import VibesPage from "@/polymet/pages/vibes-page";
 import ApplyPage from "@/polymet/pages/apply-page";
 
+
 export default function AIStudioPrototype() {
   return (
     <Router>
@@ -34,6 +35,7 @@ export default function AIStudioPrototype() {
             </LandingLayout>
           }
         />
+
         <Route
           path="/team"
           element={
