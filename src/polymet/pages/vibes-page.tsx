@@ -17,28 +17,32 @@ export default function VibesPage() {
       title: "Co-founder, Fennel AI",
       subtitle: "(Acquired by Databricks)",
       description: "Built data infrastructure for machine learning teams",
-      image: "/images/advisors/aditya-C.jpg"
+      image: "/images/advisors/aditya-C.jpg",
+      linkedin: "https://www.linkedin.com/in/adityanambiar7/"
     },
     {
       name: "Sagar Savla",
       title: "Lead PM, Google DeepMind",
       subtitle: "(12+ years at Google, Meta)",
       description: "Lead for projects in CV and research around ML Fairness",
-      image: "/images/advisors/Sagar-C.jpg"
+      image: "/images/advisors/Sagar-C.jpg",
+      linkedin: "https://www.linkedin.com/in/sagarsavla/"
     },
     {
       name: "Hamza Naimi",
       title: "Principal, BCG Dubai",
       subtitle: "(6+ years in UAE)",
       description: "Strategic Advisor with deep ties in the UAE ecosystem",
-      image: "/images/advisors/Hamza-C.jpg"
+      image: "/images/advisors/Hamza-C.jpg",
+      linkedin: "https://www.linkedin.com/in/hamzanajmi/"
     },
     {
       name: "Ritika Bansal",
       title: "Leader, Nishith Desai Associates",
       subtitle: "(Global law firm, 100+ lawyers)",
       description: "International Arbitration, Corporate Litigation",
-      image: "/images/advisors/Ritika-C.jpg"
+      image: "/images/advisors/Ritika-C.jpg",
+      linkedin: "https://www.linkedin.com/in/ritika-bansal-705030131/"
     }
   ];
 
@@ -124,13 +128,18 @@ export default function VibesPage() {
                   transition={{ delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                  <a 
+                    href={advisor.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 cursor-pointer"
+                  >
                     <img 
                       src={advisor.image} 
                       alt={advisor.name}
-                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
+                      className="w-full h-full object-cover grayscale"
                     />
-                  </div>
+                  </a>
                   <h3 className="text-white text-sm font-medium">{advisor.name}</h3>
                   <p className="text-gray-500 text-xs mt-1">
                     {advisor.title}
