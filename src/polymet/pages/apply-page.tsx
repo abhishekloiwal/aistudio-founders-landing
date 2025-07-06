@@ -54,6 +54,31 @@ export default function ApplyPage() {
         return;
       }
 
+      // Upload CV file to storage if present
+      let cvUrl = null;
+      if (formData.cv) {
+        const fileExt = formData.cv.name.split('.').pop();
+        const fileName = `${email}-${Date.now()}.${fileExt}`;
+        
+        const { data: uploadData, error: uploadError } = await supabase.storage
+          .from('application-cvs')
+          .upload(fileName, formData.cv);
+
+        if (uploadError) {
+          console.error('File upload error:', uploadError);
+          setError("Failed to upload CV. Please try again.");
+          setLoading(false);
+          return;
+        }
+
+        // Get the public URL for the uploaded file
+        const { data: urlData } = supabase.storage
+          .from('application-cvs')
+          .getPublicUrl(fileName);
+        
+        cvUrl = urlData.publicUrl;
+      }
+
       // Prepare application data
       const applicationData = {
         email,
@@ -62,6 +87,7 @@ export default function ApplyPage() {
         contact: formData.contact.trim(),
         link: formData.link.trim() || null,
         cv_filename: formData.cv?.name || null,
+        cv_url: cvUrl,
       };
 
       // Submit to Supabase
@@ -93,7 +119,24 @@ export default function ApplyPage() {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
-      setFormData({ ...formData, cv: e.target.files[0] });
+      const file = e.target.files[0];
+      
+      // Check file size (5MB limit)
+      if (file.size > 5 * 1024 * 1024) {
+        setError("CV file size must be less than 5MB.");
+        return;
+      }
+      
+      // Check file type
+      const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+      if (!allowedTypes.includes(file.type)) {
+        setError("CV must be a PDF, DOC, or DOCX file.");
+        return;
+      }
+      
+      setFormData({ ...formData, cv: file });
+      // Clear any previous error
+      if (error) setError(null);
     }
   };
 

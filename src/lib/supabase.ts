@@ -18,5 +18,6 @@ export interface Application {
   contact: string
   link?: string
   cv_filename?: string
+  cv_url?: string
   created_at: string
 } 
