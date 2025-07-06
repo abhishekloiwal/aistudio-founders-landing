@@ -91,7 +91,11 @@ export default function VibesPage() {
       {/* Scrollable container with snap points */}
       <div 
         ref={scrollContainerRef}
-        className="h-screen overflow-y-scroll snap-y snap-mandatory"
+        className="h-screen overflow-y-auto snap-y snap-mandatory scrollbar-hide"
+        style={{
+          scrollbarWidth: 'none', /* Firefox */
+          msOverflowStyle: 'none', /* Internet Explorer 10+ */
+        }}
       >
         {/* Section 1: Systematic AI Building */}
         <section className="h-screen flex items-center justify-center snap-start px-4">

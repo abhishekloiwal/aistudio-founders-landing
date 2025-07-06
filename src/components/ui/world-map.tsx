@@ -8,13 +8,19 @@ interface MapProps {
     end: { lat: number; lng: number; label?: string };
   }>;
   lineColor?: string;
+  scale?: number;
 }
 
 // Custom hook to get responsive scale
-function useResponsiveScale() {
-  const [scale, setScale] = useState(1.75);
+function useResponsiveScale(overrideScale?: number) {
+  const [scale, setScale] = useState(overrideScale || 1.75);
 
   useEffect(() => {
+    if (overrideScale) {
+      setScale(overrideScale);
+      return;
+    }
+
     const updateScale = () => {
       const width = window.innerWidth;
       if (width < 768) {
@@ -29,7 +35,7 @@ function useResponsiveScale() {
     updateScale();
     window.addEventListener('resize', updateScale);
     return () => window.removeEventListener('resize', updateScale);
-  }, []);
+  }, [overrideScale]);
 
   return scale;
 }
@@ -37,10 +43,11 @@ function useResponsiveScale() {
 export default function WorldMap({
   dots = [],
   lineColor = "#9ca3af", // gray-400 to match the theme
+  scale: overrideScale,
 }: MapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [hoveredCity, setHoveredCity] = useState<string | null>(null);
-  const scale = useResponsiveScale();
+  const scale = useResponsiveScale(overrideScale);
 
   // DottedMap uses different dimensions, we need to match their coordinate system
   const MAP_WIDTH = 1024;
@@ -143,7 +150,7 @@ export default function WorldMap({
   return (
     <div 
       ref={containerRef} 
-      className="w-full aspect-[2/1] rounded-lg relative font-sans origin-center my-10 md:my-16 lg:my-20 mt-12 md:mt-20 lg:mt-24"
+      className="w-full aspect-[2/1] rounded-lg relative font-sans origin-center my-4 md:my-6 lg:my-8"
       style={{ transform: `scale(${scale})` }}
     >
       {/* Map background */}
