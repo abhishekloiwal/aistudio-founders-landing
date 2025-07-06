@@ -2,8 +2,7 @@
 import { animate, motion } from "motion/react";
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import { SiAmazon, SiNvidia, SiAtlassian, SiNotion } from "react-icons/si";
-import { FcGoogle } from "react-icons/fc";
+import { SiAmazon, SiNvidia, SiAtlassian, SiNotion, SiGooglecloud } from "react-icons/si";
 
 export default function CardDemo() {
   return (
@@ -92,7 +91,7 @@ const Skeleton = () => {
           className="circle-3"
           gradient="radial-gradient(circle at center, rgba(66, 133, 244, 0.3) 0%, rgba(0, 0, 0, 0.8) 70%)"
         >
-          <FcGoogle className="h-8 w-8" />
+          <SiGooglecloud className="h-8 w-8 text-[#4285F4]" />
         </Container>
         <Container 
           className="h-12 w-12 circle-4"
