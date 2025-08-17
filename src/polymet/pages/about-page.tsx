@@ -119,7 +119,7 @@ export default function AboutPage() {
                   Our founders built trading systems managing $200MM+ at Tower Research and Optiver. We understand the rigor financial institutions demand—observability, governance, and measurable returns.
                 </p>
                 <p>
-                  We embed with your teams, align 33% of our fees to KPI achievement, and deliver production-ready AI in weeks, not years. Every model, prompt, and decision is transparent and auditable.
+                  We embed with your teams, structure our engagement around measurable outcomes, and deliver production-ready AI in weeks, not years. Every model, prompt, and decision is transparent and auditable.
                 </p>
                 <p className="text-gray-300">
                   We don't build demos. We build systems that generate value from day one.
@@ -148,7 +148,7 @@ export default function AboutPage() {
                   {[
                     { title: "2-Week Workshop", desc: "AI North Star Defined" },
                     { title: "Production in Weeks", desc: "Not Quarters" },
-                    { title: "33% KPI-Linked", desc: "Aligned Incentives" }
+                    { title: "Outcome-Based", desc: "Aligned Incentives" }
                   ].map((item, index) => (
                     <motion.div
                       key={index}
