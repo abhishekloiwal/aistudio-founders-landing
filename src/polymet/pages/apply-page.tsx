@@ -158,9 +158,10 @@ export default function ApplyPage() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-16">
-      <FadeInBlur duration={0.8}>
-        <form onSubmit={handleSubmit} className="w-full max-w-xl space-y-6">
+    <div className="flex flex-col items-center justify-center min-h-screen px-8 py-16">
+      <div className="w-full max-w-4xl">
+        <FadeInBlur duration={0.8}>
+          <form onSubmit={handleSubmit} className="w-full space-y-6">
           {/* Error Message */}
           {error && (
             <div className="bg-red-900/20 border border-red-800 rounded px-3 py-2 text-red-300 text-sm">
@@ -248,18 +249,19 @@ export default function ApplyPage() {
             />
           </div>
 
-          {/* Submit button */}
-          <div className="flex justify-center mt-8">
-            <button
-              type="submit"
-              disabled={loading}
-              className="bg-gray-700 hover:bg-gray-600 disabled:bg-gray-800 disabled:cursor-not-allowed text-white rounded-md px-6 py-2 text-sm font-light tracking-wider transition-colors duration-300"
-            >
-              {loading ? "Submitting..." : "Submit"}
-            </button>
-          </div>
-        </form>
-      </FadeInBlur>
+            {/* Submit button */}
+            <div className="pt-2">
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-gray-700 hover:bg-gray-600 disabled:bg-gray-800 disabled:cursor-not-allowed text-white rounded-md px-6 py-2 text-sm font-light tracking-wider transition-colors duration-300"
+              >
+                {loading ? "Submitting..." : "Submit"}
+              </button>
+            </div>
+          </form>
+        </FadeInBlur>
+      </div>
     </div>
   );
 } 
