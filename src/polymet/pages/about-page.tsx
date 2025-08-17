@@ -119,7 +119,7 @@ export default function AboutPage() {
                   Our founders built trading systems managing $200MM+ at Tower Research and Optiver. We understand the rigor financial institutions demand—observability, governance, and measurable returns.
                 </p>
                 <p>
-                  We embed with your teams, structure our engagement around measurable outcomes, and deliver production-ready AI in weeks, not years. Every model, prompt, and decision is transparent and auditable.
+                  We embed with your teams, structure our engagement around measurable outcomes, and deliver production-ready AI with the speed and rigor your institution demands. Every model, prompt, and decision is transparent and auditable.
                 </p>
                 <p className="text-gray-300">
                   We don't build demos. We build systems that generate value from day one.
@@ -135,7 +135,7 @@ export default function AboutPage() {
             <FadeInBlur duration={1} delay={0.2}>
               <h2 className="text-white text-2xl font-light mb-8">Why AI Studio</h2>
               <div className="text-gray-300 font-light tracking-normal text-sm mb-8">
-                From AI-Ready to AI-Native in Weeks, Not Years
+                Accelerating Your AI Transformation with Production-Grade Solutions
               </div>
             </FadeInBlur>
             
@@ -147,7 +147,7 @@ export default function AboutPage() {
                 <div className="grid grid-cols-3 gap-8 my-8">
                   {[
                     { title: "2-Week Workshop", desc: "AI North Star Defined" },
-                    { title: "Production in Weeks", desc: "Not Quarters" },
+                    { title: "Rapid Deployment", desc: "Production-Ready" },
                     { title: "Outcome-Based", desc: "Aligned Incentives" }
                   ].map((item, index) => (
                     <motion.div
