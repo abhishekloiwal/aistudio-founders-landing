@@ -88,7 +88,7 @@ export default function AboutPage() {
             <div className="max-w-7xl w-full space-y-12">
               <FadeInBlur duration={1} delay={0.2}>
                 <p className="text-gray-300 font-light tracking-normal text-sm text-center">
-                  74% of financial institutions struggle to scale AI beyond pilots
+                  Too many Financial AI projects deliver shiny demos but underdeliver on business outcomes
                   <br />
                   We deliver production-ready solutions that drive measurable outcomes
                 </p>
