@@ -171,7 +171,7 @@ export default function ApplyPage() {
           {/* What are you building? */}
           <div>
             <label className="block text-gray-300 text-sm font-light mb-2">
-              What are you building?
+              What AI use case are you exploring?
             </label>
             <input
               type="text"
@@ -187,7 +187,7 @@ export default function ApplyPage() {
           {/* Background */}
           <div>
             <label className="block text-gray-300 text-sm font-light mb-2">
-              Your background in 50 words - highlight something impressive you have done
+              Current challenge or opportunity (50 words)
             </label>
             <textarea
               name="background"
@@ -220,7 +220,7 @@ export default function ApplyPage() {
           {/* Link (optional) - More flexible */}
           <div>
             <label className="block text-gray-300 text-sm font-light mb-2">
-              Link (optional)
+              Company website (optional)
             </label>
             <input
               type="text"
@@ -228,7 +228,7 @@ export default function ApplyPage() {
               value={formData.link}
               onChange={handleChange}
               disabled={loading}
-              placeholder="e.g. github.com/yourname, linkedin.com/in/yourname"
+              placeholder="e.g. yourcompany.com"
               className="w-full bg-transparent border border-gray-800 rounded px-3 py-2 text-white text-sm focus:outline-none focus:border-gray-600 transition-colors duration-300 disabled:opacity-50"
             />
           </div>
@@ -236,7 +236,7 @@ export default function ApplyPage() {
           {/* CV Upload (optional) */}
           <div>
             <label className="block text-gray-300 text-sm font-light mb-2">
-              CV Upload (optional)
+              Reference materials (optional)
             </label>
             <input
               type="file"

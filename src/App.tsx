@@ -1,10 +1,13 @@
+import { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingLayout from "@/polymet/layouts/landing-layout";
 import LandingPage from "@/polymet/pages/landing-page";
 import AboutPage from "@/polymet/pages/about-page";
 import TeamPage from "@/polymet/pages/team-page";
 import VibesPage from "@/polymet/pages/vibes-page";
-import ApplyPage from "@/polymet/pages/apply-page";
+
+// Lazy-load Apply page to avoid initializing Supabase during local dev startup
+const ApplyPage = lazy(() => import("@/polymet/pages/apply-page"));
 
 
 export default function AIStudioPrototype() {
@@ -48,7 +51,9 @@ export default function AIStudioPrototype() {
           path="/apply"
           element={
             <LandingLayout>
-              <ApplyPage />
+              <Suspense fallback={null}>
+                <ApplyPage />
+              </Suspense>
             </LandingLayout>
           }
         />

@@ -15,11 +15,11 @@ export default function LandingLayout({ children }: LandingLayoutProps) {
         </div>
 
         <div className="text-xs text-gray-400 font-light tracking-normal text-right">
-          $500k+ partner credits
+          Production ready AI solutions
           <br />
-          World Class Advisors
+          Deep AI + Finance Expertise
           <br />
-          GTM + Engineering
+          Private, Secure, Compliant
         </div>
       </header>
       <main className="flex-1 flex justify-center items-center">

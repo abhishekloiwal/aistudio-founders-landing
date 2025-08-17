@@ -9,7 +9,7 @@ export default function LandingPage() {
   const navigate = useNavigate();
   const [showButton, setShowButton] = useState(false);
   
-  const heroText = "Where Systematic Thinkers Build AI-First Companies";
+  const heroText = "The AI Partner for Financial Institutions";
 
   return (
     <div className="flex flex-col items-center">
@@ -19,13 +19,13 @@ export default function LandingPage() {
 
       <TextGenerateEffect 
         words={heroText} 
-        className="mb-1 text-center max-w-3xl" 
+        className="mb-1 text-center max-w-3xl select-none" 
         duration={0.8}
         onAnimationComplete={() => setShowButton(true)}
       />
 
       <FadeInBlur show={showButton} delay={0.2} duration={0.8} className="mt-4">
-        <CTAButton label="Apply" onClick={() => navigate("/apply")} />
+        <CTAButton label="Get in Touch" onClick={() => navigate("/apply")} />
       </FadeInBlur>
     </div>
   );

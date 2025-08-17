@@ -97,14 +97,14 @@ export default function VibesPage() {
           msOverflowStyle: 'none', /* Internet Explorer 10+ */
         }}
       >
-        {/* Section 1: Systematic AI Building */}
+        {/* Section 1: Our Three-Pronged Approach */}
         <section className="h-screen flex items-center justify-center snap-start px-4">
           <FadeInBlur duration={1} delay={0.2}>
             <div className="text-center max-w-2xl">
-              <h2 className="text-white text-2xl font-light mb-4">Systematic AI Building</h2>
+              <h2 className="text-white text-2xl font-light mb-4">Our Three-Pronged Approach</h2>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Our methodology and AI-first mindset<br />
-                sets the foundation for everything else
+                Strategy without black boxes. Build with AI-to-build-AI.<br />
+                Deploy with embedded teams and aligned incentives.
               </p>
             </div>
           </FadeInBlur>
@@ -161,19 +161,19 @@ export default function VibesPage() {
           <CardDemo />
         </section>
 
-        {/* Section 5: Full-Stack Support */}
+        {/* Section 5: AI Orchestration Layer */}
         <section className="h-screen flex items-center justify-center snap-start px-4">
           <div className="text-center max-w-4xl">
-            <h2 className="text-white text-xl font-light mb-12">Full-Stack Support</h2>
+            <h2 className="text-white text-xl font-light mb-12">AI Orchestration Layer</h2>
             <div className="grid grid-cols-2 gap-12 mb-8">
               <div className="text-left">
-                <h3 className="text-gray-300 text-base mb-6 text-center">GTM</h3>
+                <h3 className="text-gray-300 text-base mb-6 text-center">Core Banking AI</h3>
                 <div className="space-y-3">
                   {[
-                    "Legal, compliance & security audits",
-                    "Branding, marketing & sales execution",
-                    "Strategic partnerships & business development",
-                    "Customer success & support systems"
+                    "Risk assessment & credit scoring",
+                    "Fraud detection & AML compliance",
+                    "Customer intelligence & personalization",
+                    "Regulatory reporting automation"
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -189,13 +189,13 @@ export default function VibesPage() {
                 </div>
               </div>
               <div className="text-left">
-                <h3 className="text-gray-300 text-base mb-6 text-center">Engineering</h3>
+                <h3 className="text-gray-300 text-base mb-6 text-center">Operations AI</h3>
                 <div className="space-y-3">
                   {[
-                    "Scale your infrastructure seamlessly",
-                    "DevOps & deployment automation",
-                    "Performance monitoring & optimization",
-                    "Zero-to-one for non-technical founders"
+                    "Document processing & extraction",
+                    "Trade reconciliation & settlement",
+                    "Portfolio optimization & rebalancing",
+                    "Predictive maintenance & forecasting"
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -213,7 +213,7 @@ export default function VibesPage() {
             </div>
             <div className="mt-12">
               <div className="text-gray-300 font-light tracking-normal text-sm text-center">
-                <Cover>From idea to scale</Cover>
+                <Cover>Unified intelligence across your institution</Cover>
               </div>
             </div>
           </div>

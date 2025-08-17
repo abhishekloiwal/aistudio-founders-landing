@@ -10,9 +10,9 @@ export default function CardDemo() {
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
-      <CardTitle>$500K+ in Partner Credits</CardTitle>
+      <CardTitle>Seamless Integration Across Your Stack</CardTitle>
       <CardDescription>
-        World-class technology partners supporting your journey from idea to scale
+        We integrate with your existing tools and platforms to create a unified AI orchestration layer
       </CardDescription>
     </Card>
   );

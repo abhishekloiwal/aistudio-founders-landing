@@ -82,15 +82,15 @@ export default function AboutPage() {
           msOverflowStyle: 'none', /* Internet Explorer 10+ */
         }}
       >
-        {/* Section 1: UAE's AI Vision */}
+        {/* Section 1: The Problem We Solve */}
         <section className="h-screen snap-start">
           <div className="flex flex-col items-center justify-center min-h-screen px-8 py-16">
             <div className="max-w-7xl w-full space-y-12">
               <FadeInBlur duration={1} delay={0.2}>
                 <p className="text-gray-300 font-light tracking-normal text-sm text-center">
-                  Transforming MENA's $96B technology vision into reality
+                  74% of financial institutions struggle to scale AI beyond pilots
                   <br />
-                  through systematic venture building
+                  We deliver production-ready solutions that drive measurable outcomes
                 </p>
               </FadeInBlur>
               
@@ -103,52 +103,52 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Section 2: Systematic Execution */}
+        {/* Section 2: Our Approach */}
         <section className="h-screen flex items-center justify-center snap-start px-4">
           <div className="text-center max-w-4xl">
             <FadeInBlur duration={1} delay={0.2}>
-              <h2 className="text-white text-2xl font-light mb-8">Systematic Execution</h2>
+              <h2 className="text-white text-2xl font-light mb-8">Outcome-Driven Partnership</h2>
               <div className="text-gray-300 font-light tracking-normal text-sm mb-8">
-                Between UAE Ambition and Silicon Valley Execution
+                No Black Boxes. Full Transparency. Aligned Incentives.
               </div>
             </FadeInBlur>
             
             <FadeInBlur duration={1.2} delay={0.5}>
               <div className="space-y-6 text-gray-400 text-sm leading-relaxed">
                 <p>
-                  We're the team that speaks both languages. Our founders built systems managing $200MM+ at Tower Research and Optiver. Our advisors span Google DeepMind, BCG Dubai, and Databricks acquisitions.
+                  Our founders built trading systems managing $200MM+ at Tower Research and Optiver. We understand the rigor financial institutions demand—observability, governance, and measurable returns.
                 </p>
                 <p>
-                  While others talk about UAE's potential, we have the systematic execution background to deliver—combined with deep UAE ecosystem knowledge.
+                  We embed with your teams, align 33% of our fees to KPI achievement, and deliver production-ready AI in weeks, not years. Every model, prompt, and decision is transparent and auditable.
                 </p>
                 <p className="text-gray-300">
-                  We don't just understand the vision; we know how to build it.
+                  We don't build demos. We build systems that generate value from day one.
                 </p>
               </div>
             </FadeInBlur>
           </div>
         </section>
 
-        {/* Section 3: Why Now */}
+        {/* Section 3: Why AI Studio */}
         <section className="h-screen flex items-center justify-center snap-start px-4">
           <div className="text-center max-w-4xl">
             <FadeInBlur duration={1} delay={0.2}>
-              <h2 className="text-white text-2xl font-light mb-8">Why Now</h2>
+              <h2 className="text-white text-2xl font-light mb-8">Why AI Studio</h2>
               <div className="text-gray-300 font-light tracking-normal text-sm mb-8">
-                The Perfect Storm for Systematic Builders
+                From AI-Ready to AI-Native in Weeks, Not Years
               </div>
             </FadeInBlur>
             
             <FadeInBlur duration={1.2} delay={0.5}>
               <div className="space-y-6 text-gray-400 text-sm leading-relaxed">
                 <p>
-                  Three forces converging: UAE government commitment at historic highs. AI market explosion ($3.5B → $46.3B by 2030). Massive talent gap creating unprecedented opportunity.
+                  While consultants deliver PowerPoints and vendors push black-box solutions, we build. Our AI-to-build-AI approach accelerates delivery while maintaining finance-grade standards.
                 </p>
                 <div className="grid grid-cols-3 gap-8 my-8">
                   {[
-                    { title: "Infrastructure", desc: "Built & Available" },
-                    { title: "Capital", desc: "Actively Deployed" },
-                    { title: "Window", desc: "Currently Open" }
+                    { title: "2-Week Workshop", desc: "AI North Star Defined" },
+                    { title: "Production in Weeks", desc: "Not Quarters" },
+                    { title: "33% KPI-Linked", desc: "Aligned Incentives" }
                   ].map((item, index) => (
                     <motion.div
                       key={index}
@@ -163,7 +163,7 @@ export default function AboutPage() {
                   ))}
                 </div>
                 <p className="text-gray-300">
-                  But systematic execution beats good timing every time. And we're the bridge between UAE's ambitious vision and the world-class execution it demands.
+                  We're not another vendor. We're your technical co-founders for the AI transformation journey.
                 </p>
               </div>
             </FadeInBlur>
