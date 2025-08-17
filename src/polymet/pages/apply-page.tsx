@@ -159,7 +159,7 @@ export default function ApplyPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-8 py-16">
-      <div className="w-full max-w-4xl">
+      <div className="w-full max-w-5xl">
         <FadeInBlur duration={0.8}>
           <form onSubmit={handleSubmit} className="w-full space-y-6">
           {/* Error Message */}
